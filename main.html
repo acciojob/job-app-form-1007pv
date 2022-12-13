@@ -3,13 +3,55 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Job App Form</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+    <!-- the entire body must be written by student -->
+    <header>
+        <h1>Job Application Form</h1>
+    </header>
+    <div class="form">
+        <form action="job-app-form" method="get">
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="enter your name" required><br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="enter your email" required><br><br>
+
+            <label for="gender">Gender: </label>
+            <input type="radio" required>
+            <label for="male">Male</label>
+
+            <input type="radio" required>
+            <label for="female">Female</label><br><br>
+
+            <label for="portfolio">Portfolio Link: </label>
+            <input type="text" placeholder="enter portfolio link" id="portfolio" required>
+            <br><br>
+            <label for="laptop-brands">Laptop Brands: </label>
+            <select name="laptop" id="laptop" required>
+                <option value="apple">Apple</option>
+                <option value="asus">Asus</option>
+                <option value="hp">HP</option>
+            </select>
+            <br><br>
+            <label for="age">Age: </label>
+            <input type="text" id="age" placeholder="enter your age in years" required>
+            <br><br>
+            <label for="dob">DOB: </label>
+            <input type="date" id="dob" placeholder="select date" required>
+            <br><br>
+            <label for="passord">Password: </label>
+            <input type="password" id="password" placeholder="enter passord" required>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Name*, Email*, Gender* (radio), Laptop Brands(options : [Apple, Asus, HP]), Age*, DOB*, Password* & submit button. -->
     <script type="text/javascript" src="./script.js">
-</script>
+    </script>
 
 </body>
 
