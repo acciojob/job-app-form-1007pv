@@ -9,22 +9,20 @@
 
 <body>
     <!-- the entire body must be written by student -->
-    <header>
-        <h1>Job Application Form</h1>
-    </header>
-        <form action="job-app-form" method="get">
+        <form action="#" method="post">
+            <h1>Job Application Form</h1>
             <label for="name">Name: </label>
             <input type="text" id="name" placeholder="enter your name" required><br><br>
 
             <label for="email">Email: </label>
             <input type="email" id="email" placeholder="enter your email" required><br><br>
 
-            <label for="gender">Gender: </label>
-            <input type="radio" required>
-            <label for="male">Male</label>
+            <label>Gender: </label>
+            <input type="radio" id="radio" name="gender" value="male" required>
+            <label for="radio1" name="gender">Male</label>
 
-            <input type="radio" required>
-            <label for="female">Female</label>
+            <input type="radio" id="radio" name="gender" value="female" required>
+            <label for="radio2" name="gender">Female</label>
 
             
             <br><br>
@@ -38,16 +36,16 @@
 
             <br><br>
             <label for="age">Age: </label>
-            <input type="text" required id="age" placeholder="enter your age in years" required>
+            <input type="number" required id="age" required>
             <br><br>
             <label for="dob">DOB: </label>
-            <input type="date" id="dob" placeholder="select date" required>
+            <input type="date" id="dob" required>
             <br><br>
             <label for="passord">Password: </label>
             <input type="password" id="password" placeholder="enter passord" required>
             <br><br>
             <label for="portfolio">Portfolio Link: </label>
-            <input type="text" placeholder="enter portfolio link" id="portfolio" required>
+            <input type="url" placeholder="enter portfolio link" id="portfolio" required>
             <br><br>
             <button type="submit">Submit</button>
         </form>
